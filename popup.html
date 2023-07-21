@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Extension</title>
+   
+    <style>
+
+
+        body{
+            text-align: center;
+        }
+
+        div{
+            margin: 80px auto;
+        }
+
+        .caracteristica{
+            margin: auto 10px;
+            width: 100px;
+            height: 50px;
+            background-color: #d8dbe0;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #000000;
+            text-align: center;
+            border: none;
+        }
+
+        input {
+            display: none;
+        }
+
+        #divSlide{
+            display: none;
+            margin: -15px auto;
+        }
+
+        #slide{
+            margin: 10px 10px auto;
+            display: initial;
+        }
+
+        #textLargo{
+            margin: 10px 10px auto;
+        }
+
+        #copiar{
+            margin: auto 10px;
+            padding: 10px;
+            width: max-content;
+            height: 35px;
+            background-color: #d8dbe0;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #000000;
+            text-align: center;
+            border: none;
+            display: initial;
+        }
+
+        #divPassword{
+            
+            width: max-content;
+            
+        }
+
+        #password{
+            margin: auto 10px;
+            border-width: thin;
+            border-color: black;
+            border-style: solid;
+            padding: 10px 30px 10px 30px;
+            width: max-content;
+            border-radius: 10px;
+            display: initial;
+        }
+
+        #divGenerar{
+            margin: -20px auto;
+        }
+
+        #generar{
+            display: none;
+            margin: auto 10px;
+            padding: 10px;
+            width: max-content;
+            height: 35px;
+            background-color: #d8dbe0;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #000000;
+            text-align: center;
+            border: none;
+            transition: 0.1s;
+        }
+
+        #generar:active{
+            background-color: #77dd77;
+            color: white;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="botonera">
+        <button id="minusculas" class="caracteristica">
+            <input type = 'checkbox'>
+            <span class = 'slider'></span>
+            abc
+        </button>
+        <button id="mayusculas" class="caracteristica">
+            <input type = 'checkbox'>
+            <span class = 'slider'></span>
+            ABC
+        </button>
+        <button id="numeros" class="caracteristica">
+            <input type = 'checkbox'>
+            <span class = 'slider'></span>
+            0-9
+        </button>
+        <button id="simbolos" class="caracteristica">
+            <input type = 'checkbox'>
+            <span class = 'slider'></span>
+            !@#,_*¿?
+        </button>
+               
+    </div>
+    
+    <div id="divSlide">
+        <input onclick="getLon();" onchange="getLon();" oninput="getLon();" id="slide" type="range" min="1" max="50" step="1" value="19">
+        <p id="textLargo">19</p>
+        
+    </div>
+    
+    
+    <div id="divPassword">
+        <p id="password">Your password </p>
+        <button id="copiar">
+            <input type = 'checkbox'>
+            <span class = 'slider'></span>
+            Copiar
+        </button>
+    </div>
+    
+    <div id="divGenerar">
+        <button id="generar">
+            <input type = 'checkbox'>
+            <span class = 'slider'></span>
+            Generar
+        </button>
+        
+    </div>
+</body>
+
+<script src="content.js"></script>
+</html>

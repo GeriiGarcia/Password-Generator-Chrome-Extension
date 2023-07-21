@@ -1,0 +1,26 @@
+{
+    "name": "Generador de Contraseñas",
+    "description": "Generador de contraseñas a partir del codigo creado en https://geriigarcia.github.io/PG.html",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "webNavigation", "storage", "tabs"],
+
+    "action": {
+        "default_popup": "popup.html"
+    },
+
+    "background": {
+        "script": "content.js"
+        
+    }
+
+    
+    
+
+  
+
+   
+
+
+
+}
